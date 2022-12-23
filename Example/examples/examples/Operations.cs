@@ -79,7 +79,7 @@ switch (day)
 }
 
 /*
- * while and for loop
+ * while and for and do/while loop
  */
 
 int i = 0;
@@ -93,3 +93,11 @@ for(int j = 0; j < 5; j++)
 {
     Console.WriteLine(j);
 }
+
+int k = 0;
+do
+{
+    Console.WriteLine(k);
+    k++;
+}
+while (k < 5);
