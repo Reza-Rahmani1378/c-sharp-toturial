@@ -8,8 +8,20 @@ Console.WriteLine(x > y);
  */
 
 string firstName = "Reza";
-string lastName = "Rahmani";
+string lastName = "Anonymous";
 
 string fullName = $"My full name is :{firstName} {lastName}";
 
 Console.WriteLine(fullName);
+
+/*
+  Access The Strings 
+ */
+
+string name = $"{firstName} {lastName}";
+
+int charPos = name.IndexOf('A');
+
+string lastName2 = name.Substring(charPos);
+
+Console.WriteLine(lastName2);
