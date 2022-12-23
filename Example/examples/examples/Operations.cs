@@ -139,4 +139,4 @@ string[] cars3 = new string[] { "Volvo", "BMW", "Ford", "Mazda" };
 // Create an array of four elements, omitting the new keyword, and without specifying the size
 string[] cars4 = { "Volvo", "BMW", "Ford", "Mazda" };
 
-Console.WriteLine("Arrays in C#");
+Console.WriteLine("Arrays");
