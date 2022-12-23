@@ -25,3 +25,11 @@ int charPos = name.IndexOf('A');
 string lastName2 = name.Substring(charPos);
 
 Console.WriteLine(lastName2);
+
+/*
+ * Special Characters
+ */
+
+string txt = "We are the so-called \"Vikings\" from the north.";
+
+Console.WriteLine(txt);
