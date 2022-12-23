@@ -110,3 +110,15 @@ foreach (string test in cars)
 {
     Console.WriteLine(test);
 }
+
+int m = 0;
+while (m < 10)
+{
+    if (m == 4)
+    {
+        m++;
+        continue;
+    }
+    Console.WriteLine(m);
+    m++;
+}
