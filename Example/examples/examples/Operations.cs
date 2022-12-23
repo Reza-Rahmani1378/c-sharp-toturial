@@ -15,7 +15,7 @@ string fullName = $"My full name is :{firstName} {lastName}";
 Console.WriteLine(fullName);
 
 /*
-  Access The Strings 
+ * Access The Strings 
  */
 
 string name = $"{firstName} {lastName}";
@@ -101,3 +101,12 @@ do
     k++;
 }
 while (k < 5);
+
+/*
+ * Foreach Loop 
+ */
+string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+foreach (string test in cars)
+{
+    Console.WriteLine(test);
+}
