@@ -33,3 +33,14 @@ Console.WriteLine(lastName2);
 string txt = "We are the so-called \"Vikings\" from the north.";
 
 Console.WriteLine(txt);
+
+
+/*
+ * short hand if else statement
+ */
+
+int time = 18;
+
+string result = (time < 18) ? "Good day." : "Good evening.";
+
+Console.WriteLine(result);
