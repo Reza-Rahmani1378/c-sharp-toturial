@@ -1,12 +1,21 @@
-﻿
-Console.WriteLine("Enter Username :");
+﻿namespace examples
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 
-string username = Console.ReadLine();
+            Console.WriteLine("Enter Username :");
 
-Console.WriteLine("Username is :" + username);
+            string username = Console.ReadLine();
 
-Console.WriteLine("Enter Your Age :");
+            Console.WriteLine("Username is :" + username);
 
-int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Your Age :");
 
-Console.WriteLine("Your age is :" + age);
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Your age is :" + age);
+        }
+    }
+}
