@@ -154,3 +154,12 @@ Console.WriteLine(prefixes2.Count());
 Func<string , int> fruit = (typeFruit) => Convert.ToInt32 (typeFruit);
 
 Console.WriteLine(fruit("1"));
+
+int numberFruit(string fruit)
+{
+    return Convert.ToInt32 (fruit);
+}
+
+Func<string, int> fruit2 = numberFruit;
+
+Console.WriteLine(fruit2("2"));
