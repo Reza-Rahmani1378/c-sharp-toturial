@@ -140,3 +140,17 @@ string[] cars3 = new string[] { "Volvo", "BMW", "Ford", "Mazda" };
 string[] cars4 = { "Volvo", "BMW", "Ford", "Mazda" };
 
 Console.WriteLine("Arrays");
+
+/*
+ * Lambda Expression and Collections
+ */
+
+string[] prefixes = { "exe", "cs", "jar", "docker" };
+
+IReadOnlyCollection<string> prefixes2 = prefixes;
+
+Console.WriteLine(prefixes2.Count());
+
+Func<string , int> fruit = (typeFruit) => Convert.ToInt32 (typeFruit);
+
+Console.WriteLine(fruit("1"));
