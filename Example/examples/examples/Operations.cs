@@ -1,11 +1,11 @@
-﻿int x = 5;
+﻿/*int x = 5;
 int y = 6;
 
 Console.WriteLine(x > y);
 
-/*
+*//*
  * Interpolation in String 
- */
+ *//*
 
 string firstName = "Reza";
 string lastName = "Anonymous";
@@ -14,9 +14,9 @@ string fullName = $"My full name is :{firstName} {lastName}";
 
 Console.WriteLine(fullName);
 
-/*
+*//*
  * Access The Strings 
- */
+ *//*
 
 string name = $"{firstName} {lastName}";
 
@@ -26,18 +26,18 @@ string lastName2 = name.Substring(charPos);
 
 Console.WriteLine(lastName2);
 
-/*
+*//*
  * Special Characters
- */
+ *//*
 
 string txt = "We are the so-called \"Vikings\" from the north.";
 
 Console.WriteLine(txt);
 
 
-/*
+*//*
  * short hand if else statement
- */
+ *//*
 
 int time = 18;
 
@@ -45,9 +45,9 @@ string result = (time < 18) ? "Good day." : "Good evening.";
 
 Console.WriteLine(result);
 
-/*
+*//*
  * Switch Statement
- */
+ *//*
 
 int day = Convert.ToInt32(Console.ReadLine());
 switch (day)
@@ -78,9 +78,9 @@ switch (day)
         break;
 }
 
-/*
+*//*
  * while and for and do/while loop
- */
+ *//*
 
 int i = 0;
 while (i < 5)
@@ -102,9 +102,9 @@ do
 }
 while (k < 5);
 
-/*
+*//*
  * Foreach Loop 
- */
+ *//*
 string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
 foreach (string test in cars)
 {
@@ -123,9 +123,9 @@ while (m < 10)
     m++;
 }
 
-/*
+*//*
  * Arrays 
- */
+ *//*
 
 // Create an array of four elements, and add values later
 string[] cars1 = new string[4];
@@ -141,9 +141,9 @@ string[] cars4 = { "Volvo", "BMW", "Ford", "Mazda" };
 
 Console.WriteLine("Arrays");
 
-/*
+*//*
  * Lambda Expression and Collections
- */
+ *//*
 
 string[] prefixes = { "exe", "cs", "jar", "docker" };
 
@@ -162,4 +162,4 @@ int numberFruit(string fruit)
 
 Func<string, int> fruit2 = numberFruit;
 
-Console.WriteLine(fruit2("2"));
+Console.WriteLine(fruit2("2"));*/
