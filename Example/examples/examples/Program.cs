@@ -5,6 +5,8 @@ namespace examples
     
     class Program
     {
+
+        static StreamWriter streamWriter = new StreamWriter("log.txt");
       
         public static void Main(string[] args)
         {
@@ -37,6 +39,28 @@ namespace examples
             string nameClass = typeof(Program).Name;
             Console.WriteLine(nameClass);
 
+            Log("Hello How are You?");
+
+        }
+
+        public static void Log(String message)
+        {
+            lock (streamWriter)
+            {
+                try 
+                {
+                    streamWriter.WriteLine(message);
+                }
+
+                    catch (Exception e) 
+                {
+                    Console.WriteLine(e.Message);
+                }
+                finally 
+                { 
+                    streamWriter.Flush();
+                }
+            }
         }
     }
 }
