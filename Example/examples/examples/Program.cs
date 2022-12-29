@@ -34,6 +34,9 @@ namespace examples
             string outUsername = dict.GetValueOrDefault(1, username);
             Console.WriteLine(outUsername);
 
+            string nameClass = typeof(Program).Name;
+            Console.WriteLine(nameClass);
+
         }
     }
 }
