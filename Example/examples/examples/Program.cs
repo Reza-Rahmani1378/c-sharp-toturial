@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Text;
 
 namespace examples
 {
@@ -39,7 +40,7 @@ namespace examples
             string nameClass = typeof(Program).Name;
             Console.WriteLine(nameClass);
 
-            Log("Hello How are You?");
+            division(1, 0);
 
         }
 
@@ -61,6 +62,38 @@ namespace examples
                     streamWriter.Flush();
                 }
             }
+        }
+
+        public static void division(int num1 , int num2)
+        {
+            int result = 0;
+            try
+            {
+                result = num1 / num2;
+            } 
+            catch(DivideByZeroException e)
+            {
+                joinStringMessages(e, 100, "Mem Error");
+                Console.WriteLine($"Exception caught:{e.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Result: {0}", result);
+            }
+        }
+
+        public static void joinStringMessages(Exception ex , int code , string message)
+        {
+            StringBuilder result = new StringBuilder();
+
+            result.AppendLine("***********Start Log For Exception*********").
+                AppendLine($"The Code is :{Convert.ToString(code)}")
+                  .AppendLine($"The Messages is :{message}")
+                  .AppendLine($"The Message Exception :{ex.Message}")
+                  .AppendLine($"The Stack Trace Of Exception :{ex.StackTrace}")
+                  .AppendLine("***********End Log For Exception*********");
+
+             Console.WriteLine(result.ToString());
         }
     }
 }
